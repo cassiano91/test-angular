@@ -1,7 +1,7 @@
-angular.module('dialogDemo1', ['ngMaterial'])
+var app = angular.module('dialogDemo1', ['ngMaterial']);
 
-.controller('AppCtrl', function($scope, $mdDialog) {
-	$scope.status = '  ';
+app.controller('AppCtrl', function($scope, $mdDialog) {
+	$scope.status = '...';
 	$scope.customFullscreen = false;
 
 	$scope.showAlert = function(ev) {
