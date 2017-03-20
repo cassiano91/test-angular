@@ -14,7 +14,7 @@
 							Quanto vai sacar?
 						</td>
 						<td>
-							<input type="number" name="valor" ng-model="vm.valor" required saque-async>
+							<input type="number" name="valor" ng-model="vm.valor" required saque-async step=".01">
 							<div ng-if=form.valor.$pending.saqueAsync>
 								Será que tem saldo nessa conta?
 							</div>
